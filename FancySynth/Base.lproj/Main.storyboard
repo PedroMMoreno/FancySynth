@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FancySynth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wns-Z4-Xvb">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="marble" translatesAutoresizingMaskIntoConstraints="NO" id="awT-AG-d50">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B0L-cS-yLa">
+                                <rect key="frame" x="898" y="233" width="151" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Waveform"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FSfont2" translatesAutoresizingMaskIntoConstraints="NO" id="k4l-ra-2Cv">
+                                <rect key="frame" x="226" y="24" width="742" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="KEY empty" translatesAutoresizingMaskIntoConstraints="NO" id="yRN-t0-W2G">
+                                <rect key="frame" x="30" y="439" width="1135" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jz-op-fGQ" userLabel="C1">
+                                <rect key="frame" x="39" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="ENa-q9-UvS"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vu9-fc-69R"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="luv-Ff-621"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beX-4o-U7P">
+                                <rect key="frame" x="39" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="nju-zI-Fid"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mUt-fn-SH4"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="yvG-j8-XqB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzw-fY-Sez" userLabel="D1">
+                                <rect key="frame" x="114" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="dNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="TvK-nN-SgT"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Fob-qp-ywu"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="foW-2G-hgw"/>
+                                </connections>
+                            </button>
+                            <button tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cxq-5c-cXI" userLabel="E1">
+                                <rect key="frame" x="189" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="eNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="0ih-9h-Gwv"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="3Tp-01-j5O"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YcM-uu-F9Q"/>
+                                </connections>
+                            </button>
+                            <button tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22C-hs-TCQ" userLabel="F1">
+                                <rect key="frame" x="263" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="WBR-J0-ucy"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dph-T7-qsh"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="OSQ-2f-pyh"/>
+                                </connections>
+                            </button>
+                            <button tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Cr-ed-0Mz" userLabel="G1">
+                                <rect key="frame" x="338" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="gNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="XQp-xy-4Aa"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Jv7-I3-fLf"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xYE-kJ-FeS"/>
+                                </connections>
+                            </button>
+                            <button tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lh-qp-mvr" userLabel="A1">
+                                <rect key="frame" x="413" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="aNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="k0n-uA-qmj"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NXz-sY-Njq"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="ZlC-lS-Yh0"/>
+                                </connections>
+                            </button>
+                            <button tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBC-qe-uTK" userLabel="B1">
+                                <rect key="frame" x="488" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="eNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="kpU-bU-gmT"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Aq8-yX-zex"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SwB-BJ-ra4"/>
+                                </connections>
+                            </button>
+                            <button tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKX-d4-zrA" userLabel="C2">
+                                <rect key="frame" x="563" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="fVe-RL-UXY"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lyr-5c-9JX"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="qSg-44-XD8"/>
+                                </connections>
+                            </button>
+                            <button tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8R-uG-wWz" userLabel="D2">
+                                <rect key="frame" x="637" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="dNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="UA2-tS-S2m"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="elK-tM-4IE"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="qlx-Js-YRw"/>
+                                </connections>
+                            </button>
+                            <button tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyT-up-f3n" userLabel="E2">
+                                <rect key="frame" x="712" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="eNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="X3Z-dZ-Wj7"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="18r-B0-WhZ"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="XTp-vu-xdz"/>
+                                </connections>
+                            </button>
+                            <button tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Co-FU-g3B" userLabel="F2">
+                                <rect key="frame" x="787" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="cNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="BCw-Cn-3mx"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5uN-RN-DY3"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="pIF-Xh-Y3E"/>
+                                </connections>
+                            </button>
+                            <button tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjX-CL-H2R" userLabel="G2">
+                                <rect key="frame" x="861" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="gNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="s4U-t3-obp"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="9Aa-IO-Vhs"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDt-NX-qLk"/>
+                                </connections>
+                            </button>
+                            <button tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obw-xi-eBb" userLabel="A2">
+                                <rect key="frame" x="936" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="aNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="aZy-Nt-5jN"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="iVH-j5-AbB"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mej-qs-9h6"/>
+                                </connections>
+                            </button>
+                            <button tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcg-Y9-Vsk" userLabel="B2">
+                                <rect key="frame" x="1011" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="eNotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="q5j-tM-B6V"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ec-Zp-SZS"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="lqf-uq-uNM"/>
+                                </connections>
+                            </button>
+                            <button tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSe-gR-Rwk" userLabel="C3">
+                                <rect key="frame" x="1084" y="446" width="70" height="361"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="c3NotPressed"/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="hUA-cR-Jqk"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ltw-4S-aiF"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="vcg-Zg-GVD"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" pointerInteraction="YES" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="utz-pY-mTa" userLabel="C#1">
+                                <rect key="frame" x="70" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="AoA-E0-oBi"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jkr-8G-UZE"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="vZ6-vm-JKl"/>
+                                </connections>
+                            </button>
+                            <button tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHB-8G-c0X" userLabel="D#1">
+                                <rect key="frame" x="170" y="446" width="48" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="Bwc-fM-MQU"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KwU-qP-sbM"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="mXJ-Cm-AaJ"/>
+                                </connections>
+                            </button>
+                            <button tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pth-md-5jX" userLabel="F#1">
+                                <rect key="frame" x="294" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="6Em-wl-5oK"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J80-KY-GfS"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Kwx-JF-c3D"/>
+                                </connections>
+                            </button>
+                            <button tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8o7-M0-jBk" userLabel="G#1">
+                                <rect key="frame" x="376" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="0p0-vy-sBT"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="M8J-0H-n0o"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbk-4U-SjG"/>
+                                </connections>
+                            </button>
+                            <button tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-By-r9f" userLabel="A#1">
+                                <rect key="frame" x="457" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="vby-M5-HzG"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8P-Cf-TUZ"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="imu-gF-Tvg"/>
+                                </connections>
+                            </button>
+                            <button tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v22-yR-evk" userLabel="C#2">
+                                <rect key="frame" x="592" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="A44-hZ-AB2"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="SUh-wr-hl3"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sez-Va-Imf"/>
+                                </connections>
+                            </button>
+                            <button tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymk-CS-OSi" userLabel="D#2">
+                                <rect key="frame" x="682" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="CK3-en-jg8"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQn-LV-HJN"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="NPI-zj-WHa"/>
+                                </connections>
+                            </button>
+                            <button tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ld-V5-nTT" userLabel="F#2">
+                                <rect key="frame" x="817" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="MCN-E8-YMj"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="DvI-Dt-Ke7"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSe-YB-4Ty"/>
+                                </connections>
+                            </button>
+                            <button tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFp-FF-kyu" userLabel="G#2">
+                                <rect key="frame" x="899" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="JC2-xM-OYW"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVa-5T-o20"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Snb-Mg-Zdn"/>
+                                </connections>
+                            </button>
+                            <button tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJh-Jm-o1p" userLabel="A#2">
+                                <rect key="frame" x="981" y="439" width="70" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="sharpNotPressed" title=""/>
+                                <connections>
+                                    <action selector="playKey:" destination="BYZ-38-t0r" eventType="touchDown" id="4Id-E2-bUj"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="Twt-f1-ual"/>
+                                    <action selector="stopKey:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sra-7Z-dDs"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="K9a-ac-Mz0" userLabel="Glide Switch">
+                                <rect key="frame" x="667" y="322" width="52" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.96078431372549022" green="0.74509803921568629" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="glideOnOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="5fH-Rq-gd1"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIS-5p-7ZP" userLabel="Octave Label">
+                                <rect key="frame" x="168" y="372" width="34" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4C-PT-VLU" userLabel="Amplitude Knob" customClass="ImageKnob" customModule="FancySynth" customModuleProvider="target">
+                                <rect key="frame" x="145" y="217" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="128"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="knob01_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEn-G6-nZy" userLabel="Ramp Knob" customClass="ImageKnob" customModule="FancySynth" customModuleProvider="target">
+                                <rect key="frame" x="401" y="217" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="128"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="knob01_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJS-jC-g1X" userLabel="Glide Knob" customClass="ImageKnob" customModule="FancySynth" customModuleProvider="target">
+                                <rect key="frame" x="650" y="217" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalFrames">
+                                        <integer key="value" value="128"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="imageName" value="knob01_"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimum">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maximum">
+                                        <real key="value" value="1.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ramp" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-ht-Jre">
+                                <rect key="frame" x="364" y="188" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="octave" translatesAutoresizingMaskIntoConstraints="NO" id="9xT-Ay-jHH">
+                                <rect key="frame" x="108" y="338" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glide" translatesAutoresizingMaskIntoConstraints="NO" id="RgT-3N-vnE">
+                                <rect key="frame" x="613" y="188" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlf-9B-1Hc">
+                                <rect key="frame" x="206" y="370" width="43" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.96078431369999995" green="0.74509803919999995" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" title="">
+                                    <backgroundConfiguration key="background"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="changeOct:" destination="BYZ-38-t0r" eventType="touchDown" id="zOs-Ja-W1O"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lMd-H8-n4K">
+                                <rect key="frame" x="121" y="370" width="43" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="minus"/>
+                                <connections>
+                                    <action selector="changeOct:" destination="BYZ-38-t0r" eventType="touchDown" id="9ut-d9-HRE"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="off" translatesAutoresizingMaskIntoConstraints="NO" id="9tn-kN-QsS">
+                                <rect key="frame" x="596" y="328" width="68" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="on" translatesAutoresizingMaskIntoConstraints="NO" id="QHf-aW-wRh">
+                                <rect key="frame" x="716" y="328" width="68" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="amplitude" translatesAutoresizingMaskIntoConstraints="NO" id="WEr-Ry-uMt">
+                                <rect key="frame" x="85" y="188" width="200" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="waveform" translatesAutoresizingMaskIntoConstraints="NO" id="DqM-9B-coz">
+                                <rect key="frame" x="871" y="188" width="205" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WEq-mz-uXc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="a1Button" destination="5lh-qp-mvr" id="LlJ-Ka-29g"/>
+                        <outlet property="a2Button" destination="obw-xi-eBb" id="2W8-Sr-KEl"/>
+                        <outlet property="aS1Button" destination="kIE-By-r9f" id="vXE-hk-jh9"/>
+                        <outlet property="aS2Button" destination="IJh-Jm-o1p" id="F1W-ID-zAq"/>
+                        <outlet property="amplitudeKnob" destination="u4C-PT-VLU" id="CSg-gh-WLG"/>
+                        <outlet property="b1Button" destination="eBC-qe-uTK" id="a6U-i2-h7J"/>
+                        <outlet property="b2Button" destination="kcg-Y9-Vsk" id="KZD-6s-boU"/>
+                        <outlet property="c1Button" destination="4jz-op-fGQ" id="Rhl-EF-au4"/>
+                        <outlet property="c2Button" destination="fKX-d4-zrA" id="nOb-gf-pYu"/>
+                        <outlet property="c3Button" destination="WSe-gR-Rwk" id="j1y-Qh-F6j"/>
+                        <outlet property="cS1Button" destination="utz-pY-mTa" id="QS8-Sc-13u"/>
+                        <outlet property="cS2Button" destination="v22-yR-evk" id="SBb-3S-8ei"/>
+                        <outlet property="d1Button" destination="Vzw-fY-Sez" id="BlA-3A-O0j"/>
+                        <outlet property="d2Button" destination="P8R-uG-wWz" id="E28-5s-rY1"/>
+                        <outlet property="dS1Button" destination="OHB-8G-c0X" id="Eo1-ha-fMT"/>
+                        <outlet property="dS2Button" destination="Ymk-CS-OSi" id="qhj-WE-1QQ"/>
+                        <outlet property="e1Button" destination="Cxq-5c-cXI" id="tnT-cJ-OjW"/>
+                        <outlet property="e2Button" destination="YyT-up-f3n" id="bMf-TX-E8V"/>
+                        <outlet property="f1Button" destination="22C-hs-TCQ" id="SvW-GK-vYd"/>
+                        <outlet property="f2Button" destination="8Co-FU-g3B" id="b3H-ui-lDT"/>
+                        <outlet property="fS1Button" destination="Pth-md-5jX" id="Dv3-g6-5cv"/>
+                        <outlet property="fS2Button" destination="7ld-V5-nTT" id="AqF-aA-LGr"/>
+                        <outlet property="g1Button" destination="6Cr-ed-0Mz" id="8cP-J9-PoS"/>
+                        <outlet property="g2Button" destination="hjX-CL-H2R" id="Ly6-W1-GIh"/>
+                        <outlet property="gS1Button" destination="8o7-M0-jBk" id="mls-vj-Nih"/>
+                        <outlet property="gS2Button" destination="JFp-FF-kyu" id="AcC-GS-SPq"/>
+                        <outlet property="glideKnob" destination="wJS-jC-g1X" id="6hY-2x-Oqb"/>
+                        <outlet property="octaveLabel" destination="HIS-5p-7ZP" id="5eE-ch-rHL"/>
+                        <outlet property="rampKnob" destination="aEn-G6-nZy" id="iQ6-iH-DRv"/>
+                        <outlet property="showMenuButton" destination="B0L-cS-yLa" id="Pqu-G6-T6I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19.597989949748744" y="97.841726618705039"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FSfont2" width="1024" height="105"/>
+        <image name="KEY empty" width="1128" height="375"/>
+        <image name="aNotPressed" width="70" height="361"/>
+        <image name="amplitude" width="854" height="118"/>
+        <image name="c3NotPressed" width="70" height="361"/>
+        <image name="cNotPressed" width="70" height="361"/>
+        <image name="dNotPressed" width="70" height="361"/>
+        <image name="eNotPressed" width="70" height="361"/>
+        <image name="gNotPressed" width="70" height="361"/>
+        <image name="glide" width="441" height="104"/>
+        <image name="marble" width="1024" height="683"/>
+        <image name="minus" width="40" height="40"/>
+        <image name="octave" width="568" height="105"/>
+        <image name="off" width="262" height="105"/>
+        <image name="on" width="195" height="105"/>
+        <image name="plus" width="40" height="40"/>
+        <image name="ramp" width="417" height="118"/>
+        <image name="sharpNotPressed" width="46" height="224"/>
+        <image name="waveform" width="833" height="119"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
