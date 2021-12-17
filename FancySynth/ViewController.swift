@@ -80,7 +80,7 @@ class ViewController: UIViewController {
         ]
     }
     
-    override func viewDidLoad() { // TODO_ JUST A COMMENT
+    override func viewDidLoad() { 
         
         super.viewDidLoad()
         
