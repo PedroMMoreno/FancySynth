@@ -8,7 +8,6 @@
 import UIKit
 import AudioKit
 
-//Test coment
 
 class ViewController: UIViewController {
     
