@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/AudioKit/AudioKitUI",
         "state": {
           "branch": "main",
-          "revision": "acc314268e167d3709ca137b8f812e42c872635f",
+          "revision": "da1f7de619588f9199d33e59540f66cda464e7c7",
           "version": null
         }
       },
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/Audiokit/DunneAudioKit",
         "state": {
           "branch": null,
-          "revision": "7a7cce24616fe49137e01533ff9c8c5c6fa68658",
-          "version": "5.2.1"
+          "revision": "ae73e34c16d33bfd7a91b0906a72fb7473487690",
+          "version": "5.2.2"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/AudioKit/SoundpipeAudioKit/",
         "state": {
           "branch": null,
-          "revision": "dd8106ff8a768613623eb6cf40b5e1cc00b12eeb",
-          "version": "5.2.1"
+          "revision": "3b92a11c31789073d1f48db8fa36ffa4b98a0dc7",
+          "version": "5.2.2"
         }
       }
     ]
